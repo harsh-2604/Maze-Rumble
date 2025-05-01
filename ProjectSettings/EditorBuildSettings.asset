@@ -12,6 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Single Player/Single Player Level 1.unity
     guid: 588b26bfce6a7ea4fb1f76fcddad923e
   - enabled: 1
-    path: Assets/Scenes/Common Scene/Game Over.unity
+    path: Assets/Scenes/Common Scene/Game Over (Winning).unity
     guid: f2e6054d0b15bc545941be7fff2093ea
+  - enabled: 1
+    path: Assets/Scenes/Common Scene/Game Over (Losing).unity
+    guid: 4c0284107e8f66644b14dd4bf3db449d
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

@@ -7,8 +7,13 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public static Timer Instance;
-    public static float timer = 0f;
+    public static float timer;
     public TMP_Text timerText;
+
+    private void Start()
+    {
+        timer = 0f;
+    }
     private void Update()
     {
         timer += Time.deltaTime;

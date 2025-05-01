@@ -57,8 +57,7 @@ public class Movement : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Game Over"))
         {
-            SceneManager.LoadScene("Game Over");
-            GameOver.isWon = true;
+            SceneManager.LoadScene("Game Over (Winning)");
             
             /*
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

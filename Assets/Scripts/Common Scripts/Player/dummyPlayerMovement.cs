@@ -39,9 +39,7 @@ public class dummyPlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground")) isOnGround = true;
         if (collision.gameObject.CompareTag("Game Over"))
         {
-            SceneManager.LoadScene("Game Over");
-            GameOver.isWon = true;
-
+            SceneManager.LoadScene("Game Over (Winning");
             /*
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             int nextSceneIndex = currentSceneIndex + 1;
@@ -55,7 +53,14 @@ public class dummyPlayerMovement : MonoBehaviour
                 Debug.LogWarning("No more scenes to load.");
             }*/
         }
-    }   
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pothole"))
+        {
+            SceneManager.LoadScene("Game Over (Losing)");
+        }
+    }
     private void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground")) isOnGround = false;
